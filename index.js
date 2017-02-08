@@ -7,6 +7,8 @@ import Comment from './src/scripts/functionalComponents'
 import Toggler from './src/scripts/toggler'
 import Error from './src/scripts/warning'
 import List from './src/scripts/list'
+import StateComponent from './src/scripts/stageRenderComponent'
+import Form from './src/scripts/formComponent'
 
 let props = {
     message: 'No Message',
@@ -29,4 +31,6 @@ window.addEventListener('load', () => {
     ReactDOM.render(<Toggler/>, document.getElementById('toggler'));
     ReactDOM.render(<Error/>, document.getElementById('err'));
     ReactDOM.render(<List/>, document.getElementById('list'));
+    ReactDOM.render(<StateComponent/>, document.getElementById('state'));
+    ReactDOM.render(<Form/>, document.getElementById('form'));
 });
