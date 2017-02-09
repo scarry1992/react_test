@@ -41,7 +41,7 @@ main = {
 if (NODE_ENV == 'development') {
     Object.assign(dev, main);
     dev.debug = true;
-    dev.devTools = 'cheap-inline-module-source-map';
+    dev.devtool = 'cheap-inline-module-source-map';
     dev.devServer = {
         inline: true
     };
