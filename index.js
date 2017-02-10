@@ -9,6 +9,7 @@ import Error from './src/scripts/warning'
 import List from './src/scripts/list'
 import StateComponent from './src/scripts/stageRenderComponent'
 import Form from './src/scripts/formComponent'
+import Calculator from './src/scripts/calculatorComponent'
 
 let props = {
     message: 'No Message',
@@ -33,4 +34,5 @@ window.addEventListener('load', () => {
     ReactDOM.render(<List/>, document.getElementById('list'));
     ReactDOM.render(<StateComponent/>, document.getElementById('state'));
     ReactDOM.render(<Form/>, document.getElementById('form'));
+    ReactDOM.render(<Calculator/>, document.getElementById('calculator'));
 });
