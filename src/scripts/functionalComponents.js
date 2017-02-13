@@ -1,6 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+let props = {
+    message: 'No Message',
+    user: {
+        name: "No Name",
+        alt: "No Image",
+        img: "/assets/img/noimg.png"
+    }
+}
+
 function LogoComponent(props) {
     return <img className="user__logo" src={props.user.img} alt={props.user.alt}/>
 }
@@ -47,3 +56,4 @@ export default function Comment(props) {
         </div>
     );
 }
+Comment.defaultProps = props;

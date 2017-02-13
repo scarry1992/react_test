@@ -43,7 +43,8 @@ if (NODE_ENV == 'development') {
     dev.debug = true;
     dev.devtool = 'cheap-inline-module-source-map';
     dev.devServer = {
-        inline: true
+        inline: true,
+        historyApiFallback: true
     };
     dev.progress = true;
     dev.watch = true;
