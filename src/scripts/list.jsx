@@ -4,7 +4,10 @@ export default class List extends Component {
     constructor(props) {
         super(props);
         this.items = props.items;
-        //this.defaultProps = {items:[9,8,7,6,5]};//так не пашет
+    }
+
+    static get defaultProps() {// надо так!
+        return {items:[9,8,7,6,5]};
     }
 
     render() {
@@ -19,8 +22,6 @@ export default class List extends Component {
         );
     }
 }
-
-List.defaultProps = {items:[9,8,7,6,5]};// надо так!
 
 function ListElement(props) {
     return (

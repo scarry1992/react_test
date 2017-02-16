@@ -8,7 +8,7 @@ let props = {
         alt: "No Image",
         img: "/assets/img/noimg.png"
     }
-}
+};
 
 function LogoComponent(props) {
     return <img className="user__logo" src={props.user.img} alt={props.user.alt}/>
