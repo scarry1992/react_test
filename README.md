@@ -27,3 +27,26 @@
 - 14.08
     - Роуты с параметрами(необязательные роуты заключаются в скобки, доступ к параметрам из шаблона осуществляется с помощью)
     - Ссылки с параметрами
+- 24.08
+    - PropTypes используется для валидации приходящих props(Тяжелая операция - лучше только для DEV)
+    - Варианты использования:
+        - Указывать примитив:
+            - optionalArray: React.PropTypes.array,
+            - optionalBool: React.PropTypes.bool,
+            - optionalFunc: React.PropTypes.func,
+            - optionalNumber: React.PropTypes.number,
+            - optionalObject: React.PropTypes.object,
+            - optionalString: React.PropTypes.string
+        - Указать, что свойство может быть одним из списка примитивов:
+            - optionalUnion: React.PropTypes.oneOfType([
+                React.PropTypes.string,
+                React.PropTypes.number,
+                React.PropTypes.instanceOf(Message)
+              ]),
+        - Указать конкретную структуру объекта:
+            - optionalObjectWithShape: React.PropTypes.shape({
+                 color: React.PropTypes.string,
+                 fontSize: React.PropTypes.number
+              })
+        - Указать обязательность параметра:
+            - requiredAny: React.PropTypes.any.isRequired

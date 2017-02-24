@@ -10,6 +10,9 @@ import StateComponent from './stageRenderComponent';
 import Form from './formComponent';
 import Calculator from './calculatorComponent';
 import Nav from './navigation'
+import SortList from './propTypesExample'
+
+let elements = ['qwe','rty','yui','asd','fgh'];
 
 export default class MainComponent extends Component {
     constructor(props) {
@@ -30,6 +33,7 @@ export default class MainComponent extends Component {
                 <StateComponent/>
                 <Form/>
                 <Calculator/>
+                <SortList elements={elements}/>
                 {this.props.children}
             </div>
         );
